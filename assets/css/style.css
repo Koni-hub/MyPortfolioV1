@@ -1,0 +1,617 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');   
+
+* {                         
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+    background-color: #f1f1f1;
+}
+
+/* ---------------------------- Header -----------------------------------*/
+
+header {
+    -webkit-backdrop-filter: blur(8px);
+    backdrop-filter: blur(8px);
+    transition: 0.3s;
+    z-index: 100;
+    top: 0;
+    width: 100%;
+    position: fixed;
+}
+
+#logo-name {
+    font-family: 'Inter', sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    position: absolute;
+    text-transform: none;
+}
+
+/* ---------------------------- Nav Bar -----------------------------------*/
+
+nav {
+    margin: 0 auto;
+    max-width: 1650px;
+}
+
+.closebtn {
+    display: none;
+}
+
+.menu-button {
+    visibility: hidden;
+}
+
+nav ul {
+    visibility: visible;
+    padding-top: 10px;
+    float: right;
+}
+
+li {
+    list-style-type: none;
+    display: inline-block;
+}
+
+li a {
+    font-family: 'Inter', sans-serif;
+    font-style: normal;
+    display: block;
+    color: black;
+    text-align: center;
+    padding: 12px 25px;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+li a span {
+    font-size: 35px;
+    color: rgb(25, 0, 255);
+}
+
+li a:hover {
+    transition: 0.2s;
+    transform: scale(1);
+}
+
+li a::after {
+    content: '';
+    display: block;
+    height: 0.4em;
+    width: 0%;
+    bottom: 1px;
+    border-bottom: 2px solid transparent;
+    transition: all ease-in-out 250ms;
+    
+}
+
+ul li a:hover::after {
+    border-bottom: 2px solid rgb(25, 0, 255);
+    width: 100%;
+}
+
+#toggle-mode {
+    margin-right: 15px;
+    background: none;
+    border: none;
+}
+
+/* ---------------------------- Home -----------------------------------*/
+
+.container-home {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 100px;
+    margin-left: 0;
+    margin-right: 0;
+    padding: 25px;
+}   
+
+.home {
+    padding: 200px 0 0 0;
+    color: black;
+    padding-bottom: 150px;
+}
+
+.home h1 {
+    font-family: 'Inter', sans-serif;
+    font-weight: 200;
+    padding-bottom: 5px;
+    font-size: 4rem;
+}
+
+.home span {
+    font-family: 'Inter', sans-serif;
+    font-weight: 900;
+    padding-bottom: 5px;
+    font-size: 4rem;
+}
+
+.home h5 {
+    padding-left: 5px;
+    font-family: 'Inter', sans-serif;
+    font-weight: 200;
+    padding-bottom: 5px;
+    margin-top: 0;
+    margin-bottom: 1rem;
+    max-width: 700px;
+    letter-spacing: 3px;
+    font-size: 1.2rem;
+}
+
+.home #image-home {
+    border-radius: 100%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+.link {
+    padding: 5px 0;
+    display: inline-block;
+    font-size: 25px;
+    display: block;
+    margin-bottom: 10px;
+}
+
+.link a:hover {
+    cursor: pointer;
+}
+
+/* ----------------------------------About Us----------------------------------------- */
+
+.about h1 {
+    font-family: "Inter", sans-serif;
+    font-weight: 900;
+    font-style: normal;
+    color: black;
+    margin-top: 150px;
+    letter-spacing: 8px;
+    font-size: 3em;
+    text-align: center;
+}
+
+.about .info {
+    padding: 20px;
+    display: flex;
+    max-width: 1000px;
+    margin: auto;
+    gap: 25px;
+}
+
+.about img {
+    border-radius: 25px;
+}
+
+.info h5 {
+    font-family: 'Inter', sans-serif;
+    font-weight: 200;
+    font-size: 1.0rem;
+    font-weight: 100;
+    padding: 0 0 1.2rem 0;
+}
+
+.info .about-info {
+    padding: 0 0 1.2rem 0;
+    font-size: 0.2rem;
+    font-weight: 400;
+    display: flex;
+    padding-top: 10px;
+    max-width: 1000px;
+    margin: auto;
+    gap: 25px;
+}
+
+.about-info p {
+    font-family: 'Inter', sans-serif;
+    font-size: small;
+    font-weight: 200;
+    padding-bottom: 25px;
+}
+/* ---------------------------------- Skills ----------------------------------------- */
+
+
+.skills h1 {
+    font-family: "Inter", sans-serif;
+    font-weight: 900;
+    font-style: normal;
+    color: black;
+    margin-top: 150px;
+    letter-spacing: 8px;
+    font-size: 3em;
+    text-align: center;
+}
+
+.skills h3 {
+    font-family: "Inter", sans-serif;
+    font-weight: 200;
+    font-size: 18px;
+    font-style: normal;
+    width: 85%;
+    margin: auto auto;
+    text-align: center;
+    padding-bottom: 2rem;
+    letter-spacing: 3px;
+}
+
+.info-card-container {
+    margin: auto auto;
+    text-align: center;
+    padding-bottom: 25px;
+    display: grid;
+    grid-template-columns: repeat(4, auto);
+    justify-items: center;
+}
+
+.info-card {
+    height: 200px;
+    width: 180px;
+}
+
+.info-card img {
+    width: 100%;
+    height: 75px;
+    object-fit: contain;
+    border-radius: 10px;
+}
+
+.info-card img:hover + h4 {
+    visibility: visible;
+    opacity: 1;
+    transform: translateY(0);
+    transition: opacity 0.3s ease-in-out, transform 0.3s ease-in-out;
+}
+
+.info-card h4 {
+    visibility: hidden;
+    font-family: 'Inter', sans-serif;
+    font-weight: 400;
+    margin-top: 15px;
+    opacity: 0;
+    transform: translateY(-10px);
+}
+
+/* ---------------------------------- Project----------------------------------------- */
+
+.project h1 {
+    font-family: "Inter", sans-serif;
+    font-weight: 900;
+    font-style: normal;
+    color: black;
+    margin-top: 150px;
+    letter-spacing: 8px;
+    font-size: 3em;
+    text-align: center;
+}
+
+.project-container {
+    padding: 42px 32px auto;
+    margin: auto auto;
+}
+
+.project-card-container {
+    padding-top: 15px;
+    justify-content: center;
+    margin: auto auto;
+}
+
+.project-card {
+    border-radius: 5px;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px;
+    margin: 10px;
+    display: flex;
+    height: 500px;
+    margin-bottom: 50px;
+}
+
+.project-card .img-holder {
+    box-sizing: border-box;
+    padding: 4.8rem 25px;
+    height: 100%;
+    overflow: hidden;
+    position: relative;
+    border: solid 0.1rem #f3f4f6;
+    background-color: #f9fafb;
+}
+
+.project-card img {
+    object-fit: contain;
+    max-width: 100%;
+    min-height: 250px;
+}
+
+.project-card .description {
+    box-sizing: border-box;
+    padding: 2.8rem 2.3rem 2.8rem 2.3rem;
+    height: 100%;
+    overflow: hidden;
+    position: relative;
+    row-gap: 1rem;
+    display: flex;
+    flex-direction: column;
+}
+
+.description h3, .description h5 {
+    font-family: 'Inter', sans-serif;
+    font-weight: 400;
+}
+
+.description h5 {
+    font-family: 'Inter', sans-serif;
+    font-weight: 200;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.tools {
+    font-family: 'Inter', sans-serif;
+    background-color: #edeff2;
+    color: #545151;
+    padding: 5px 10px;
+    margin-right: 10px;
+    border-radius: 5px;
+    font-size: 14px;
+}
+
+a {
+    text-decoration: none;
+}
+
+.group-btn {
+    display: flex;
+    gap: 15px;
+}
+
+.button-github {
+    background-color: #282936;
+    width: 50px;
+    height: 50px;
+    border-radius: 5px;
+}
+
+.button-github #github {
+    font-size: 25px;
+}
+
+/* ---------------------------------- Services ----------------------------------------- */
+
+.service h1 {
+    font-family: "Inter", sans-serif;
+    font-weight: 900;
+    font-style: normal;
+    color: black;
+    margin-top: 150px;
+    letter-spacing: 8px;
+    font-size: 3em;
+    text-align: center;
+}
+
+.service-container {
+    padding: 0 0 4rem 0;
+}
+
+.service-card-container {
+    display: grid;
+    grid-template-columns: repeat(3 , auto);
+    justify-content: center;
+}
+
+.service-card {
+    border: 2px solid #ccc;
+    border-radius: 8px;
+    margin: 10px;
+    padding: 20px;
+    text-align: center;
+}
+
+.service-card img {
+    max-width: 250px;
+    min-height: 350px;
+    border-radius: 10px;
+    object-fit: contain;
+}
+
+.service-card h4 {
+    font-family: 'Inter', sans-serif;
+    font-weight: 400;
+    font-size: 18px;
+    letter-spacing: 3px;
+    margin: 0 0 10px 0;
+}
+
+.service-card p {
+    font-family: 'Inter', sans-serif;
+    font-weight: 200;
+    font-weight: 200;
+    font-size: 12px;
+}
+
+.service-card:hover {
+    animation: 0.8s;
+    transform: scale(1.05);
+}
+
+/* ---------------------------------- Contact Us ----------------------------------------- */
+
+.session {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url("../img/contact.jpg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    border-radius: 12px;
+    padding: 30px;
+    margin: 50px;
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 25px;
+    color: white;
+}
+
+.left,.right {
+    max-width: 100%;
+}
+
+.contact-message {
+    width: auto;
+    max-width: none;
+}
+
+.left .contact-message h4 {
+    font-family: 'Inter', sans-serif;
+    font-weight: 900;
+    font-size: 1.5rem;
+    border-bottom: #0056b3 2px solid; 
+    display: inline;
+}
+
+.left .contact-message p {
+    font-weight: 200;
+    padding: 15px 0 0 0;
+}
+
+.contact-message p {
+    font-family: 'Inter', sans-serif;
+    font-weight: 200;
+    color: #F1F1F1;
+    text-align: left;
+    letter-spacing: 1px;
+}
+
+#form {
+    max-width: 600px;
+    border-radius: 5px;
+}
+
+#form h4 {
+    font-family: 'Inter', sans-serif;
+    font-weight: 900;
+    border-bottom: #0056b3 2px solid; 
+    display: inline;
+}
+
+#form #contact-form {
+    margin: 15px auto;
+}
+
+label {
+    font-family: 'Inter', sans-serif;
+    font-weight: 200;
+    margin-left: 1px;
+    color: #F1F1F1;
+    padding: 0 0 0 5px;
+}
+
+input[type="text"], textarea {
+    width: 100%;
+    padding: 10px;
+    margin: 5px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+textarea {
+    resize: vertical;
+    min-height: 100px;
+}
+
+input[type="button"] {
+    font-family: 'Inter', sans-serif;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+input[type="submit"]:hover {
+    background-color: #0056b3;
+}
+/* ---------------------------- Footer -----------------------------------*/
+
+footer {
+    font-size: 16px;
+    padding-top: 50px;
+    margin-top: 10px;
+    text-align: center;
+    left: 0;
+    bottom: 0;
+    height: 125px;
+    color: black;
+}
+
+footer h6 {
+    font-family: "Inter", sans-serif;
+    font-weight: 400;
+    font-size: 1.2rem;
+    text-align: center;
+}
+
+/* ---------------------------- Responsive Arrorw-up --------------------------*/
+
+.back-to-Top {
+    width: 50px;
+    height: 50px;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    border-radius: 100%;
+    background-color: #f1f1f1;
+    display: none;
+    cursor: pointer;
+    z-index: 99;
+    text-align: center;
+    line-height: 45px;
+    animation: pulse 2s infinite;
+}
+
+.back-to-Top.shown {
+    display: block;
+    visibility: visible;
+    transform: none;
+}
+
+.back-to-Top img {
+    width: 25px;
+    height: 25px;
+    vertical-align: middle;
+    display: inline-block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+@keyframes pulse {
+	0% {
+		transform: scale(0.95);
+		box-shadow: 0 0 0 0 rgba(0, 0, 0, 0.5);
+	}
+
+	70% {
+		transform: scale(1);
+		box-shadow: 0 0 0 10px rgba(0, 0, 0, 0);
+	}
+
+	100% {
+		transform: scale(0.95);
+		box-shadow: 0 0 0 0 rgba(0, 0, 0, 0.5);
+	}
+}
+
+/* ---------------------------- Responsive Arrorw-up --------------------------*/
+
+hr.divider {
+    height: 0.2rem;
+    max-width: 5.25rem;
+    margin: 1.5rem auto;
+    background-color: #ffffff;
+    opacity: 1;
+}

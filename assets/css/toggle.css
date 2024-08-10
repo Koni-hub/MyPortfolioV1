@@ -1,0 +1,202 @@
+/* dark-mode.css */
+
+:root {
+    --primary-bg: #010101;
+}
+
+body.dark-mode {
+    background-color: var(--primary-bg);
+    color: #fff;
+}
+
+body.dark-mode header,
+body.dark-mode #mySidenav,
+body.dark-mode #nav-ul li a {
+    background-color: var(--primary-bg);
+    color: #fff;
+}
+
+body.dark-mode #nav-ul li a:hover {
+    background-color: var(--primary-bg);
+    color: #fff;
+}
+
+body.dark-mode #github {
+    color: white;
+}
+
+body.dark-mode .home #image-home {
+    border: white solid 1px;
+}
+
+body.dark-mode p,
+body.dark-mode h1,
+body.dark-mode h2,
+body.dark-mode h3,
+body.dark-mode h4,
+body.dark-mode h5,
+body.dark-mode span {
+    color: #fff;
+}
+
+body.dark-mode .service h1,
+body.dark-mode .service p,
+body.dark-mode .service-card {
+    color: #fff;
+}
+
+body.dark-mode #toggle-menu {
+    color: white;
+}
+
+
+body.dark-mode .service-card,
+body.dark-mode .project-card,
+body.dark-mode #form
+body.dark-mode #contact-form {
+    background-color: var(--primary-bg);
+    color: #fff;
+}
+
+body.dark-mode #click-btn {
+    border: 2px solid white;
+    background-color: var(--primary-bg);
+    color: #fff;
+}
+
+body.dark-mode input,
+body.dark-mode textarea {
+    color: #fff;
+    background-color: #3B3B3B;
+}
+
+body.dark-mode input[type="button"] {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+body.dark-mode .back-to-Top img {
+    color: #fff;
+}
+
+body.dark-mode footer {
+    background-color: var(--primary-bg);
+    color: #fff;
+}
+
+body.dark-mode #logo-name, span {
+    color: rgb(25, 0, 255);
+}
+
+body.dark-mode #footer {
+    color: #888;
+}
+
+.section {
+    margin-top: 50px;
+    padding: 5rem 0;
+}
+
+.section-bg {
+    background-color: #f6f8fe;
+}
+
+.section__header {
+    max-width: 50rem;
+    margin: auto;
+    text-align: center;
+    padding-bottom: 5rem;
+    color: #000;
+}
+
+.section__title,
+.section__subtitle {
+    color: #000;
+}
+
+body.dark-mode .section-bg {
+    background-color: var(--primary-bg);
+}
+
+body.dark-mode .section__header,
+body.dark-mode .section__title,
+body.dark-mode .section__subtitle {
+    color: #fff; 
+}
+
+body.dark-mode #toggle-mode {
+    background-color: var(--primary-bg);
+    border: none;
+}
+
+body.dark-mode .project-card .img-holder {
+    border: none;
+    background-color: #21232e;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+
+body.dark-mode .project-card .description {
+    background-color: #111217;
+}
+
+body.dark-mode .project-card {
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+
+body.dark-mode .info-card-container .info-card {
+    border: none;
+}
+
+body.dark-mode .tools {
+    font-family: 'Inter', sans-serif;
+    display: inline-block;
+    background-color: #5b5d60;
+    color: #f3eeee;
+    padding: 5px 10px;
+    margin-right: 10px;
+    border-radius: 5px;
+    font-size: 14px;
+}
+
+body.dark-mode .closebtn {
+    color: #FFF;
+}
+
+.back-to-Top {
+    width: 50px;
+    height: 50px;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    border-radius: 100%;
+    background-color: #f1f1f1;
+    display: none;
+    cursor: pointer;
+    z-index: 99;
+    text-align: center;
+    line-height: 45px;
+    animation: pulse 2s infinite;
+}
+
+
+@keyframes pulse {
+	0% {
+		transform: scale(0.95);
+		box-shadow: 0 0 0 0 rgba(244, 244, 244, 0.5);
+	}
+
+	70% {
+		transform: scale(1);
+		box-shadow: 0 0 0 10px rgba(139, 137, 137, 0);
+	}
+
+	100% {
+		transform: scale(0.95);
+		box-shadow: 0 0 0 0 rgba(109, 109, 109, 0.5);
+	}
+}
